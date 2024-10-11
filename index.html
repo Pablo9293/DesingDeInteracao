@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle Gráfico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Painel de Controle do Cartão</h1>
+        <div class="row mt-4">
+            <!-- Painel de Controle -->
+            <div class="col-md-6">
+                <h3>Controles</h3>
+                <form id="controlForm">
+                    <!-- Controle de cor de fundo -->
+                    <label for="bgColor">Cor de Fundo:</label>
+                    <input type="color" id="bgColor" class="form-control mb-3" value="#ffffff">
+
+                    <!-- Controle de cor da borda -->
+                    <label for="borderColor">Cor da Borda:</label>
+                    <input type="color" id="borderColor" class="form-control mb-3" value="#000000">
+
+                    <!-- Controle de tamanho -->
+                    <label for="size">Tamanho do Cartão:</label>
+                    <input type="range" id="size" class="form-range mb-3" min="100" max="400" value="200">
+
+                    <!-- Controle de texto -->
+                    <label for="text">Texto do Cartão:</label>
+                    <input type="text" id="text" class="form-control mb-3" placeholder="Insira o texto">
+
+                    <!-- Controle de borda arredondada -->
+                    <label for="borderRadius">Arredondar Borda:</label>
+                    <input type="range" id="borderRadius" class="form-range" min="0" max="50" value="0">
+                </form>
+            </div>
+
+            <!-- Painel Gráfico -->
+            <div class="col-md-6">
+                <h3 class="text-center">Visualização:</h3> <!-- Corrigido: class="text-center" -->
+                <div id="card" class="card">
+                    <p id="cardText">Texto de Exemplo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

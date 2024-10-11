@@ -1,0 +1,32 @@
+/* Estilização geral do layout */
+body {
+    background-color: #87CEEB; /* Azul celeste */
+}
+
+.container {
+    max-width: 900px; /* Largura máxima da container */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.card {
+    width: 200px; /* Largura do cartão */
+    height: 200px; /* Altura do cartão */
+    margin: 20px auto; /* Margem ao redor do cartão */
+    border: 2px solid black; /* Borda do cartão */
+    background-color: #ffffff; /* Fundo branco do cartão */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinhamento do texto */
+    transition: all 0.3s ease; /* Transição suave para alterações */
+}
+
+h1, h3 {
+    text-align: center; /* Alinhamento central do cabeçalho */
+    color: #333; /* Cor do texto */
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+}
+
+.form-control, .form-range {
+    margin-bottom: 15px; /* Margem inferior dos controles */
+}
